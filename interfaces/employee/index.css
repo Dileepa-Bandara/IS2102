@@ -16,6 +16,10 @@ html {
 body {
   font-family: serif;
 }
+
+.main-container {
+  width: 100%;
+}
 /* top-menu ----------------------------------------------*/
 .top-container {
   height: var(--height);
@@ -114,10 +118,15 @@ body {
   color: white;
   font-weight: bold;
 }
-
-.buttons button {
+.buttons {
   width: 10.8em;
   font-size: 25px;
+  width: 90%;
+}
+.buttons button {
+  display: block;
+
+  width: 100%;
   border: none;
   background: var(--button-color-side);
   border-radius: 10px;
@@ -127,8 +136,10 @@ body {
 
 .buttons button a,
 .buttons button {
+  font-size: 25px;
   color: white;
   text-decoration: none;
+  padding: 0.4em;
 }
 
 .drop-content {
@@ -149,12 +160,12 @@ body {
 /*content container---------------------------------------------------------------------------------------*/
 .content {
   position: absolute;
-
+  width: 100%;
   top: 3em;
 
-  background: green;
-
-  border: 1px solid black;
+  /* border: 1px solid black; */
   transition: margin-left 0.3s;
-  padding: 16px;
+  padding-top: 45px;
+  padding-left: 75px;
+  padding-right: 75px;
 }
