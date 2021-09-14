@@ -47,21 +47,21 @@
 
             if (!empty($_GET["Page"])) {
                 $pageName = $_GET["Page"];
-                echo "<h2>page name is $pageName</h2>";
+                // echo "<h2>page name is $pageName</h2>";
                 $pages_directory = "pages";
-                echo "<h2>Directory name is $pages_directory</h2>";
+                // echo "<h2>Directory name is $pages_directory</h2>";
 
 
                 //get page directory
                 $pages_folder = scandir($pages_directory, 1);
-                echo "<pre>";
-                print_r($pages_folder);
-                echo "</pre>";
+                // echo "<pre>";
+                // print_r($pages_folder);
+                // echo "</pre>";
                 //remove unnecessary files
                 unset($pages_folder[1], $pages_folder[3], $pages_folder[4]);
-                echo "<pre>";
-                print_r($pages_folder);
-                echo "</pre>";
+                // echo "<pre>";
+                // print_r($pages_folder);
+                // echo "</pre>";
 
 
 
